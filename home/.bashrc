@@ -113,6 +113,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-source "$HOME/.homesick/repos/homeshick/homeshick.sh"
-
-source "$HOME/.homesick/repos/homeshick/completions/homeshick-completion.bash"
+export HOMESHICK_DIR="$(brew --prefix homeshick)"
+source "$HOMESHICK_DIR/completions/homeshick-completion.bash"
+source "/opt/homebrew/opt/homeshick/homeshick.sh"
